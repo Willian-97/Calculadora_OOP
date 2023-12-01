@@ -7,7 +7,7 @@ class Calculator {
     }
 
     checkLastDigit(input, upperValue, reg) {
-        if((
+        if ((
             !reg.test(input) &&
             !reg.test(upperValue.substr(upperValue.length - 1))
         )) {
@@ -17,21 +17,36 @@ class Calculator {
         }
     }
 
+    clearValue() {
+        this.upperValue.textContent = 0;
+        this.resultValue.textContent = 0;
+    }
+
     btnPress() {
-        const input = this.textContent;
+        let input = this.textContent;
         const upperValue = calc.upperValue.textContent;
         // verificações
         const reg = new RegExp("^\\d+$");
-        
-        if(calc.checkLastDigit(input, upperValue, reg)) {
-            return false;
-        }
 
+        if (input === "AC") {
 
-        if(upperValue === "0") {
-            calc.upperValue.textContent = input;
+            calc.clearValue();
+
         } else {
-            calc.upperValue.textContent += input;
+            if (calc.checkLastDigit(input, upperValue, reg)) {
+                return false;
+            }
+
+            // adiciona espaços aos operadores
+            if(!reg.test(input)){
+                input = ` ${input} `;
+            } 
+
+            if (upperValue === "0") {
+                calc.upperValue.textContent = input;
+            } else {
+                calc.upperValue.textContent += input;
+            }
         }
 
     }
@@ -47,6 +62,6 @@ const buttons = document.querySelectorAll(".btn");
 
 
 // map all buttons
-for(let i = 0; buttons.length > i; i++){
+for (let i = 0; buttons.length > i; i++) {
     buttons[i].addEventListener("click", calc.btnPress);
 }
