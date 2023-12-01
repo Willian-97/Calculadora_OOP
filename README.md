@@ -11,7 +11,7 @@ JavaScript
 ### Funcionalidades
 >- Calculos simples 
 >- Pode ser usado mais de uma operação
->- Regras matematicas respeitas
+>- Regras matemáticas respeitas
 
 ### Link do projeto
 [Calculadora](https://willian-97.github.io/Calculadora_OOP/)
