@@ -1,7 +1,7 @@
 # Calculadora_OOP
 Projeto de uma calculadora totalmente Orientada a Objetos
 
-![Calculadora]()
+![Calculadora](img/calculadora.png)
 
 ## Tecnologias usadas
 HTML |
