@@ -9,7 +9,7 @@ CSS |
 JavaScript
 
 ### Funcionalidades
->- Calculos simples 
+>- Cálculos simples 
 >- Pode ser usado mais de uma operação
 >- Regras matemáticas respeitas
 
