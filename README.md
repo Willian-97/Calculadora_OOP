@@ -9,10 +9,9 @@ CSS |
 JavaScript
 
 ### Funcionalidades
->- Calculos complexos
->- Pode ser usado mais de uma número  
+>- Calculos complexos  
 >- Pode ser usado mais de uma operação
->- Regras matematicas respeitas 
+>- Regras matematicas respeitas
 
 ### Link do projeto
 [Calculadora](https://google.com)
