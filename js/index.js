@@ -121,8 +121,10 @@ class Calculator {
                 input = ` ${input} `;
             } 
 
-            if (upperValue === "0") {
-                calc.upperValue.textContent = input;
+            if (upperValue == "0") {
+                if(reg.test(input)){
+                    calc.upperValue.textContent = input;                
+                }
             } else {
                 calc.upperValue.textContent += input;
             }
